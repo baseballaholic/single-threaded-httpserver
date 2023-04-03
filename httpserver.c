@@ -93,24 +93,6 @@ int main(int argc, char *argv[]) {
                 memset(&buffer, 0, sizeof(buffer));
             }
         }
-        //We need to check that the request was properly recieved
-        //if(req < 0){
-        //If we were not allowed to open the file
-        //if(errno == EACCES){
-        //errors = 1;
-        //sendheader(fd, response, FORBIDDEN, 0, content);
-        //}
-        //If we couldn't locate the file
-        //else if(errno == ENOENT){
-        //errors = 1;
-        //sendheader(fd, response, FILE_NOT_FOUND, 0, content);
-        //}
-        //A different error occurred
-        //else{
-        //errors = 1;
-        //sendheader(fd, response, INTERNAL_ERROR, 0, content);
-        //}
-        //}
 
         //Split up the request and store the information
         if (strlen(header) > 0) {
